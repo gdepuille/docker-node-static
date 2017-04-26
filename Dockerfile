@@ -1,5 +1,5 @@
 FROM gdepuille/docker-common
-MAINTAINER Gregory DEPUILLE <gregory.depuille@gmail.com>
+LABEL maintainer "Gregory DEPUILLE <gregory.depuille@gmail.com>"
 
 # Define application directory as workdir
 WORKDIR /app
