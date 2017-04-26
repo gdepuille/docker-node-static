@@ -7,7 +7,9 @@ WORKDIR /app
 # Install NodeJS
 RUN apk --update add nodejs \
       && rm -rf /var/cache/apk/* \
-      && npm install -g http-server 
+      && npm install -g http-server \
+      && npm cache clean \
+      && rm -rf ~/.npm
 
 # Define default command
 CMD ["http-server", "-h"]
